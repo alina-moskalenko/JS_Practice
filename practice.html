@@ -4,16 +4,16 @@
   // if num is multple of 5 write buzz
   // if num is multiple of 3 & 5 write fizzbuzz
 
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 500; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
       //tests if multiple of 3 & 5
-      document.write(i + '-fizzbuzz ');
+      document.write(i + '-fizzbuzz <br> ');
     } else if (i % 3 == 0) {
       //tests is mutliple of 3
-      document.write(i + '-fizz ');
+      document.write(i + '-fizz <br>');
     } else if (i % 5 == 0) {
       // tests is mutliple of 5
-      document.write(i + '-buzz ');
+      document.write(i + '-buzz <br>');
     }
   }
   document.write('Done!');
