@@ -1,0 +1,20 @@
+<script>
+  // loop from 1-100
+  // if num is multiple of 3 write fizz
+  // if num is multple of 5 write buzz
+  // if num is multiple of 3 & 5 write fizzbuzz
+
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      //tests if multiple of 3 & 5
+      document.write(i + '-fizzbuzz ');
+    } else if (i % 3 == 0) {
+      //tests is mutliple of 3
+      document.write(i + '-fizz ');
+    } else if (i % 5 == 0) {
+      // tests is mutliple of 5
+      document.write(i + '-buzz ');
+    }
+  }
+  document.write('Done!');
+</script>
