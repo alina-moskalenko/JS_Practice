@@ -1,26 +1,91 @@
 <script>
-  // loop from 1-100
-  // if num is multiple of 3 write fizz
-  // if num is multple of 5 write buzz
-  // if num is multiple of 3 & 5 write fizzbuzz
+  /*
+    // loop from 1-100
+    // if num is multiple of 3 write fizz
+    // if num is multple of 5 write buzz
+    // if num is multiple of 3 & 5 write fizzbuzz
 
-  // order of filtration is muy importante
+    // order of filtration is muy importante
 
-  for (let i = 1; i <= 100; i++)
-    console.log((i % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz'));
+    // conditional (ternary) operator
+    for (let i = 1; i <= 100; i++)
+      console.log((i % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz'));
 
-  for (let i = 1; i <= 500; i++)
-    for (let i = 1; i <= 500; i++) {
-      if (i % 3 == 0 && i % 5 == 0) {
-        //tests if multiple of 3 & 5
-        document.write(i + '-fizzbuzz <br> ');
-      } else if (i % 3 == 0) {
-        //tests is mutliple of 3
-        document.write(i + '-fizz <br>');
-      } else if (i % 5 == 0) {
-        // tests is mutliple of 5
-        document.write(i + '-buzz <br>');
+    for (let i = 1; i <= 500; i++)
+      for (let i = 1; i <= 500; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+          //tests if multiple of 3 & 5
+          document.write(i + '-fizzbuzz <br> ');
+        } else if (i % 3 == 0) {
+          //tests is mutliple of 3
+          document.write(i + '-fizz <br>');
+        } else if (i % 5 == 0) {
+          // tests is mutliple of 5
+          document.write(i + '-buzz <br>');
+        }
       }
-    }
-  document.write('Done!');
+    document.write('Done!');
+    */
+
+  // create a drop down with all states
+  let states = new Array(
+    'Alabama',
+    'Alaska',
+    'Arizona',
+    'Arkansas',
+    'California',
+    'Colorado',
+    'Connecticut',
+    'Delaware',
+    'District of Columbia',
+    'Florida',
+    'Georgia',
+    'Hawaii',
+    'Idaho',
+    'Illinois',
+    'Indiana',
+    'Iowa',
+    'Kansas',
+    'Kentucky',
+    'Louisiana',
+    'Maine',
+    'Maryland',
+    'Massachusetts',
+    'Michigan',
+    'Minnesota',
+    'Mississippi',
+    'Missouri',
+    'Montana',
+    'Nebraska',
+    'Nevada',
+    'New Hampshire',
+    'New Jersey',
+    'New Mexico',
+    'New York',
+    'North Carolina',
+    'North Dakota',
+    'Ohio',
+    'Oklahoma',
+    'Oregon',
+    'Pennsylvania',
+    'Rhode Island',
+    'South Carolina',
+    'South Dakota',
+    'Tennessee',
+    'Texas',
+    'Utah',
+    'Vermont',
+    'Virginia',
+    'Washington',
+    'West Virginia',
+    'Wisconsin',
+    'Wyoming'
+  );
+
+  document.write('<h3>Choose your state:<h3>');
+  document.write('<select>');
+  for (let i = 0; i < states.length; i++) {
+    document.write(`'<option value="${states[i]}">${states[i]}</option>'`);
+  }
+  document.write('</select>');
 </script>
